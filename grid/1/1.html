@@ -1,0 +1,36 @@
+<!-- https://css-tricks.com/introduction-fr-css-unit/ -->
+
+<head>
+  <style>
+   .grid {
+     display: grid;
+     background-color: rgba(255,0,0,.7);
+     grid-template-columns: repeat(4, 1fr); /* Had we used `25% 25%
+     25% 25%` instead of `1fr`, then the grid would have overflown */
+     grid-column-gap: 10px;
+     height: 100%;
+   }
+   
+   .column {
+     background-color: rgba(0,0,0,.2);
+   }
+  </style>
+</head>
+
+<body>
+  4 Columns:
+  <div class="grid">
+    <div class="column">
+      First Columns
+    </div>
+    <div class="column">
+      Second Column
+    </div>
+    <div class="column">
+      Third Column
+    </div>
+    <div class="column">
+      Fourth Column
+    </div>
+  </div>
+</body>

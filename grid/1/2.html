@@ -1,0 +1,37 @@
+<!-- https://css-tricks.com/introduction-fr-css-unit/ -->
+
+<head>
+  <style>
+   .grid {
+     display: grid;
+     background-color: rgba(255,0,0,.7);
+     grid-template-columns: 250px repeat(12, 1fr);
+     grid-column-gap: 10px;
+     height: 100%;
+   }
+   
+   .column {
+     background-color: rgba(0,0,0,.2);
+   }
+  </style>
+</head>
+
+<body>
+  Navigation bar (fixed width in pixels) + 12 columns (set at oen
+  fraction of the free space):
+  <div class="grid">
+    <div class="column">Navigation bar</div>
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+    <div class="column">7</div>
+    <div class="column">8</div>
+    <div class="column">9</div>
+    <div class="column">10</div>
+    <div class="column">11</div>
+    <div class="column">12</div>
+  </div>
+</body>
