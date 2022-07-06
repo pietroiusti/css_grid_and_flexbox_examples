@@ -13,7 +13,7 @@
        margin: 2em auto;
        font: .9em/1.2 Arial, Helvetica, sans-serif;
      }
-     
+
      .container {
        display: grid;
        grid-template-columns: repeat(3, 1fr);
@@ -33,17 +33,33 @@
        width: 75%;
        margin: 20px auto;
      }
+
+     .code {
+       background-color: #d3d3d3;
+       font-family: monospaced;
+     }
     </style>
   </head>
 
   <body>
-    <div id="descr"> There are seven divs in the grid container.
-      <b>grid-template-columns: repeat(3, 1fr);</b> creates three columns,
-      each of one fraction. <b>grid-auto-rows: minmax(100px, auto);</b> sets
-      the height of of the rows to 100px but expandable if content that
-      would overflow is added. For setting the height to 100px you can
-      just say <b>100px</b>, but content would potentially overflow.</div>
-    
+    <div id="descr">
+      <div>
+        There are seven divs in the grid container.
+      </div>
+      <div>
+        <span class="code">grid-template-columns: repeat(3, 1fr);</span> creates three columns,
+        each of one fraction.
+      </div>
+      <div>
+        <span class="code">grid-auto-rows: minmax(100px, auto);</span> sets
+        the height of of the rows to 100px but expandable if content that
+        would overflow is added.
+      </div>
+      <div>
+        For setting the height to 100px you can
+        just say <span class="code">100px</span>, but content would potentially overflow.</div>
+    </div>
+
     <div class="container">
       <div>One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One </div>
       <div>Two</div>

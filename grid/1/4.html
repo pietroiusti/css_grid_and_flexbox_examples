@@ -13,7 +13,7 @@
        margin: 2em auto;
        font: .9em/1.2 Arial, Helvetica, sans-serif;
      }
-     
+
      .container {
        display: grid;
        /* grid-template-columns: repeat(3, 1fr); */
@@ -36,18 +36,23 @@
        width: 75%;
        margin: 20px auto;
      }
+
+     .code {
+       background-color: #d3d3d3;
+       font-family: monospaced;
+     }
     </style>
   </head>
 
   <body>
     <div id="descr">
-      We have only changed grid-template-columns. Now «grid is
+      We have only changed <span class="code">grid-template-columns</span>. Now «grid is
         creating as many 200-pixel columns as will fit into the
         container, then sharing whatever space is leftover among all
-        the columns. The maximum is 1fr which, as we already know,
+        the columns. The maximum is <span class="code">1fr</span> which, as we already know,
         distributes space evenly between tracks.»
     </div>
-    
+
     <div class="container">
       <div>One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One One </div>
       <div>Two</div>
