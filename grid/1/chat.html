@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>A chat style/layout</title>
+    <style>
+     body {
+       font-family: 'VT323', monospace;
+       background-color: black;
+       color: #04ff00;
+       width: 80%;
+       max-width: 900px;
+       margin: 2em auto;
+     }
+
+     .container {
+       /* background-color: #fadeff; */
+       display: grid;
+       grid-template-areas:
+         "header header"
+         "userList content"
+         "userList footer";
+       grid-template-columns: 0.7fr 3fr;
+       gap: 20px;
+       height: 600px;
+     }
+
+     #header {
+       border-radius: 5px;
+       padding: 10px;
+       /* background-color: #fadeff; */
+       border: 2px solid #04ff00;
+     }
+
+     #header {
+       grid-area: header;
+       text-align: center;
+       /* background-color: #fadeff; */
+       border-radius: 5px;
+       border: 2px solid #04ff00;
+     }
+
+     #messages {
+       grid-area: content;
+       /* background-color: aliceblue; */
+       height: 500px;
+       overflow: auto;
+       border-radius: 5px;
+       border: 2px solid #04ff00;
+     }
+
+     #userList {
+       grid-area: userList;
+       /* background-color: #fadeff; */
+       overflow: auto;
+       border-radius: 5px;
+       border: 2px solid #04ff00;
+     }
+
+     #littleInfo {
+       text-align: center;
+       background-color: aliceblue;
+       border-radius: 5px;
+     }
+
+     #messageInput {
+       grid-area: footer;
+     }
+
+     #descr {
+       width: 75%;
+       margin: 20px auto;
+       border-radius: 5px;
+     }
+
+     input {
+       width: 100%;
+       border-radius: 5px;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div id="header">A Chat in React</div>
+
+      <div id="userList">
+        Users:
+        <ul>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipebarbagianniakdkdkdkd            
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+          <li>
+            Johnny
+          </li>
+          <li>
+            Maria
+          </li>
+          <li>
+            Felipe
+          </li>
+        </ul>
+      </div> <!-- userList -->
+
+      <div id="messages">
+        <ul>
+          <li>&lt;Gildo&gt; Duis felis orci, pulvinar id metus ut, rutrum luctus
+            orci. Cras porttitor imperdiet nunc, at ultricies tellus
+            laoreet sit amet. Sed auctor cursus massa at porta. Integer
+            ligula ipsum, tristique sit amet orci vel, viverra egestas
+            ligula. Curabitur vehicula tellus neque, ac ornare ex
+            malesuada et. In vitae convallis lacus. Aliquam erat
+            volutpat. Suspendisse ac imperdiet turpis. Aenean finibus
+            sollicitudin eros pharetra congue. Duis ornare egestas augue
+            ut luctus. Proin blandit quam nec lacus varius commodo et a
+            urna. Ut id ornare felis, eget fermentum sapien.</p></li>
+
+          <li><p>&lt;Duccio&gt; Nam vulputate diam nec tempor bibendum. Donec
+            luctus augue eget malesuada ultrices. Phasellus turpis
+            est, posuere sit amet dapibus ut, facilisis sed est. Nam
+            id risus quis ante semper consectetur eget aliquam
+            lorem. Vivamus tristique elit dolor, sed pretium metus
+            suscipit vel. Mauris ultricies lectus sed lobortis
+            finibus. Vivamus eu urna eget velit cursus viverra quis
+            vestibulum sem. Aliquam tincidunt eget purus in
+            interdum. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.</p></li>
+
+          <li><p>&lt;Duccio&gt; Nam vulputate diam nec tempor bibendum. Donec
+            luctus augue eget malesuada ultrices. Phasellus turpis
+            est, posuere sit amet dapibus ut, facilisis sed est. Nam
+            id risus quis ante semper consectetur eget aliquam
+            lorem. Vivamus tristique elit dolor, sed pretium metus
+            suscipit vel. Mauris ultricies lectus sed lobortis
+            finibus. Vivamus eu urna eget velit cursus viverra quis
+            vestibulum sem. Aliquam tincidunt eget purus in
+            interdum. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.</p></li>
+          
+          <li>&lt;Gildo&gt; Duis felis orci, pulvinar id metus ut, rutrum luctus
+            orci. Cras porttitor imperdiet nunc, at ultricies tellus
+            laoreet sit amet. Sed auctor cursus massa at porta. Integer
+            ligula ipsum, tristique sit amet orci vel, viverra egestas
+            ligula. Curabitur vehicula tellus neque, ac ornare ex
+            malesuada et. In vitae convallis lacus. Aliquam erat
+            volutpat. Suspendisse ac imperdiet turpis. Aenean finibus
+            sollicitudin eros pharetra congue. Duis ornare egestas augue
+            ut luctus. Proin blandit quam nec lacus varius commodo et a
+            urna. Ut id ornare felis, eget fermentum sapien.</p></li>
+          
+          <li><p>&lt;Duccio&gt; Nam vulputate diam nec tempor bibendum. Donec
+            luctus augue eget malesuada ultrices. Phasellus turpis
+            est, posuere sit amet dapibus ut, facilisis sed est. Nam
+            id risus quis ante semper consectetur eget aliquam
+            lorem. Vivamus tristique elit dolor, sed pretium metus
+            suscipit vel. Mauris ultricies lectus sed lobortis
+            finibus. Vivamus eu urna eget velit cursus viverra quis
+            vestibulum sem. Aliquam tincidunt eget purus in
+            interdum. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.</p></li>
+
+          <li><p>&lt;Duccio&gt; Nam vulputate diam nec tempor bibendum. Donec
+            luctus augue eget malesuada ultrices. Phasellus turpis
+            est, posuere sit amet dapibus ut, facilisis sed est. Nam
+            id risus quis ante semper consectetur eget aliquam
+            lorem. Vivamus tristique elit dolor, sed pretium metus
+            suscipit vel. Mauris ultricies lectus sed lobortis
+            finibus. Vivamus eu urna eget velit cursus viverra quis
+            vestibulum sem. Aliquam tincidunt eget purus in
+            interdum. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.</p></li>
+        </ul>
+      </div> <!-- messages --> 
+            
+      <!-- <div id="littleInfo">
+           By pietroiusti
+           </div> -->
+
+      <div id="messageInput"><input type="text" id="messageInput" autofocus></div>
+    </div> <!-- container -->
+  </body>
+
+</html>

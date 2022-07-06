@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Giulio Pietroiusti's Programming Projects</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/d8be3321c4.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+    <style>
+     body {
+       text-align: center;
+     }
+     
+     .wrapper {
+       display: grid;
+       margin: auto;
+       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+       grid-column-gap: 5px;
+       height: 100%;
+       width: 70%;
+       max-width: 875px;
+     }
+
+     .one {
+       text-align: center;
+       padding: 5px;
+     }
+
+     .two {
+       text-align: justify;
+       padding: 5px;
+     }
+
+     .descr {
+       text-align: left;
+       background-color: #c7fffa;
+     }
+    </style>
+
+  </head>
+
+  <body>
+
+    <h2>Change number of columns when resizing</h2>
+
+    <div class="descr">
+      In this example the two column layout becomes one column when the container is made small enough.
+
+      Sources:
+      <ul>
+        <li>https://css-tricks.com/snippets/css/complete-guide-grid/</li>
+        <li>https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/</li>
+      </ul>
+    </div>
+
+    <div class="wrapper">
+      <div class="one">
+        <div class="name">janus-key | <a href="https://github.com/pietroiusti/janus-key"><i class="fa-brands fa-github"></i></a>
+	</div>
+	<div class="technologies">C ⸱ Linux Input Event Interface
+	</div>
+	<div class="thumbnail"><img src="./janus-key.png" width="320" height="180" alt="janus-key" />
+	</div>
+      </div>
+
+      <div class="two">
+        <div class="shortDescription">A key remapper for GNU/Linux
+	  that provides keys with a double function.</div>
+	<div class="longDescription">I am a daily Emacs user and
+	  using Emacs means a persistent usage of modifiers; not the
+	  best treatment for your hands. In order to improve
+	  ergonomics, I came up with the idea of turning normal keys
+	  into modifiers only when pressed down, keeping their
+	  original functionality when tapped. janus-key allows to
+	  assign any key two functions, one when tapped, and another
+	  when held down and used in combination with other keys. As
+	  far as I know, janus-key is the first piece of software of
+	  its kind that it's both graphical interface independent —
+	  besides X, it works on Wayland, and on the tty — and
+	  systemd independent. I first implemented <a href="https://github.com/pietroiusti/xtramodifiers"> this idea in python</a>,
+	  but it was too good an opportunity to write my first
+	  “real” C program. I use it everyday!
+	</div>
+      </div>
+    </div>
+ 
+  </body>
+  
+</html>
